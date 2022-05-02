@@ -293,7 +293,7 @@ const obj1 = new App();
 
 const openModal = function () {
   sideBarEl.classList.add('overlay');
-  mapEl.classList.add('overlay');
+  mapEl.classList.add('hidden');
   modalEl.classList.remove('hidden');
 };
 
@@ -301,7 +301,7 @@ const closeModal = function (e) {
   if (e.target.closest('.help-button')) return;
   modalEl.classList.add('hidden');
   sideBarEl.classList.remove('overlay');
-  mapEl.classList.remove('overlay');
+  mapEl.classList.remove('hidden');
 };
 
 helpBtn.addEventListener('click', openModal);
