@@ -308,7 +308,3 @@ helpBtn.addEventListener('click', openModal);
 modalCloseBtn.addEventListener('click', closeModal);
 sideBarEl.addEventListener('click', closeModal);
 mapEl.addEventListener('click', closeModal);
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && sideBarEl.classList.contains('overlay'))
-    closeModal(e);
-});
